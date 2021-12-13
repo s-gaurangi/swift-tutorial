@@ -13,6 +13,7 @@ class MainTabController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewControllers()
+        configureTabBar()
     }
     
     //MARK: - Helpers
@@ -26,7 +27,7 @@ class MainTabController: UITabBarController {
         let profile = templateNavigationController(unselectedImage: #imageLiteral(resourceName: "profile_unselected"), selectedImage: #imageLiteral(resourceName: "profile_selected"), rootView: ProfileController())
         
         viewControllers = [feed, search, selection, notifs, profile]
-        tabBar.tintColor = .black
+        //tabBar.backgroundColor = .white
     }
     
     func templateNavigationController(unselectedImage: UIImage, selectedImage: UIImage, rootView: UIViewController) -> UINavigationController {
@@ -36,7 +37,22 @@ class MainTabController: UITabBarController {
         nav.tabBarItem.selectedImage = selectedImage
         nav.navigationBar.tintColor = .black
         
+        let standard_appearance = UINavigationBarAppearance()
+        standard_appearance.configureWithOpaqueBackground()
+        nav.navigationBar.standardAppearance = standard_appearance
+        nav.navigationBar.scrollEdgeAppearance = standard_appearance
+        
         return nav
     }
-}
+    
+    func configureTabBar() {
 
+        let appearance = UITabBarAppearance()
+        
+        appearance.configureWithOpaqueBackground()
+        UITabBar.appearance().standardAppearance = appearance
+        UITabBar.appearance().scrollEdgeAppearance = appearance
+        
+        
+    }
+}
