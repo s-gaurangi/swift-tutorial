@@ -20,8 +20,8 @@ class FeedController: UICollectionViewController {
     //MARK: - Helpers
     
     func configureUI() {
-        collectionView.backgroundColor = UIColor.black
-        collectionView.register(UICollectionViewCell.self,forCellWithReuseIdentifier: reuseIdentifier) //register a cell with the same reuse identifier that is passed through the data source
+        collectionView.backgroundColor = .white
+        collectionView.register(FeedCell.self,forCellWithReuseIdentifier: reuseIdentifier) //register a cell with the same reuse identifier that is passed through the data source
     }
 }
 //MARK: - UICollectionViewDataSource
@@ -36,8 +36,7 @@ extension FeedController {
     //how to create each cell
     //reuse identifier is like memory management - dequeue the cell that has gone off the screen
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        cell.backgroundColor = .systemPink
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FeedCell //create boilerplate cell to be type FeedCell (custom)
         return cell
     }
 }

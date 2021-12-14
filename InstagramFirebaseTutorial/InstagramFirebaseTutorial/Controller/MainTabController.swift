@@ -52,7 +52,7 @@ class MainTabController: UITabBarController {
 
         let appearance = UITabBarAppearance()
         
-        appearance.configureWithOpaqueBackground()
+        appearance.configureWithDefaultBackground()
         UITabBar.appearance().standardAppearance = appearance
         UITabBar.appearance().scrollEdgeAppearance = appearance
         

@@ -21,6 +21,7 @@
 		056D41BC2766A70400E281A6 /* ImageSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D41BB2766A70400E281A6 /* ImageSelectController.swift */; };
 		056D41BE2766A70D00E281A6 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D41BD2766A70D00E281A6 /* NotificationsController.swift */; };
 		056D41C02766A71500E281A6 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D41BF2766A71500E281A6 /* ProfileController.swift */; };
+		5CE1CCF6276936E600E967C6 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1CCF5276936E600E967C6 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		056D41BB2766A70400E281A6 /* ImageSelectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectController.swift; sourceTree = "<group>"; };
 		056D41BD2766A70D00E281A6 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		056D41BF2766A71500E281A6 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		5CE1CCF5276936E600E967C6 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 		056D41B22766A02400E281A6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5CE1CCF5276936E600E967C6 /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				056D417F27669F1200E281A6 /* ViewController.swift in Sources */,
+				5CE1CCF6276936E600E967C6 /* FeedCell.swift in Sources */,
 				056D41BA2766A6FA00E281A6 /* SearchController.swift in Sources */,
 				056D417B27669F1200E281A6 /* AppDelegate.swift in Sources */,
 				056D41B82766A6EB00E281A6 /* FeedController.swift in Sources */,
