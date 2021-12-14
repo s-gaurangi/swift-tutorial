@@ -20,7 +20,10 @@ class MainTabController: UITabBarController {
     
     func configureViewControllers() {
         view.backgroundColor = .white
-        let feed = templateNavigationController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"), rootView: FeedController())
+        
+        let layout = UICollectionViewFlowLayout()
+        
+        let feed = templateNavigationController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"), rootView: FeedController(collectionViewLayout: layout))
         let search = templateNavigationController(unselectedImage: #imageLiteral(resourceName: "search_unselected"), selectedImage: #imageLiteral(resourceName: "search_selected"), rootView: SearchController())
         let selection = templateNavigationController(unselectedImage: #imageLiteral(resourceName: "plus_unselected"), selectedImage: #imageLiteral(resourceName: "plus_unselected"), rootView: ImageSelectController())
         let notifs = templateNavigationController(unselectedImage: #imageLiteral(resourceName: "like_unselected"), selectedImage: #imageLiteral(resourceName: "like_selected"), rootView: NotificationsController())
@@ -34,11 +37,11 @@ class MainTabController: UITabBarController {
         
         let nav = UINavigationController(rootViewController: rootView)
         nav.tabBarItem.image = unselectedImage
-        nav.tabBarItem.selectedImage = selectedImage
+        nav.tabBarItem.selectedImage = selectedImage 
         nav.navigationBar.tintColor = .black
         
         let standard_appearance = UINavigationBarAppearance()
-        standard_appearance.configureWithOpaqueBackground()
+        standard_appearance.configureWithDefaultBackground()
         nav.navigationBar.standardAppearance = standard_appearance
         nav.navigationBar.scrollEdgeAppearance = standard_appearance
         
