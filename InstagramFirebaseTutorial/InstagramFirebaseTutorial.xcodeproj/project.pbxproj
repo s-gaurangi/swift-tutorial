@@ -21,6 +21,7 @@
 		056D41BC2766A70400E281A6 /* ImageSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D41BB2766A70400E281A6 /* ImageSelectController.swift */; };
 		056D41BE2766A70D00E281A6 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D41BD2766A70D00E281A6 /* NotificationsController.swift */; };
 		056D41C02766A71500E281A6 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D41BF2766A71500E281A6 /* ProfileController.swift */; };
+		5C0CE3F1276BA9E400EB41E4 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0CE3F0276BA9E400EB41E4 /* extension.swift */; };
 		5CE1CCF6276936E600E967C6 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1CCF5276936E600E967C6 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		056D41BB2766A70400E281A6 /* ImageSelectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectController.swift; sourceTree = "<group>"; };
 		056D41BD2766A70D00E281A6 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		056D41BF2766A71500E281A6 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		5C0CE3F0276BA9E400EB41E4 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = SOURCE_ROOT; };
 		5CE1CCF5276936E600E967C6 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 		056D41AA27669FF000E281A6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5C0CE3F0276BA9E400EB41E4 /* extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				056D41B82766A6EB00E281A6 /* FeedController.swift in Sources */,
 				056D41BC2766A70400E281A6 /* ImageSelectController.swift in Sources */,
 				056D41C02766A71500E281A6 /* ProfileController.swift in Sources */,
+				5C0CE3F1276BA9E400EB41E4 /* extension.swift in Sources */,
 				056D41B62766A20200E281A6 /* MainTabController.swift in Sources */,
 				056D41BE2766A70D00E281A6 /* NotificationsController.swift in Sources */,
 				056D417D27669F1200E281A6 /* SceneDelegate.swift in Sources */,

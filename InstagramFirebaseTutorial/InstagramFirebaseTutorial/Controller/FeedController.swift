@@ -43,6 +43,12 @@ extension FeedController {
 
 extension FeedController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height:200)
+        
+        let width = view.frame.width
+        //adding 8 pixels + 40 for the size of the profile image view
+        var height = width + 8 + 40
+        //50 comes from the imageview and 60 comes from everything else
+        height += 110
+        return CGSize(width: width, height:height)
     }
 }
